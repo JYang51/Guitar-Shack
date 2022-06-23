@@ -1,2 +1,12 @@
-package com.guitarshack;public class HelloWorldController {
+package com.guitarshack;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+    @GetMapping("/helloworld")
+    public String helloWorld() {
+        return "Hello World";
+    }
 }
