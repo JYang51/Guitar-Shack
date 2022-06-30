@@ -11,11 +11,11 @@ public class CheckProductNeedsReorderingSteps {
     private Notification notification;
     private SalesEventHandler salesEventHandler;
 
-    @Given("A product with stock level of {int} and a buffer of {int}")
-    public void stockLevelIsGreaterThanBuffer(int stockLevel, int buffer) {
+    @Given("A product with stock level of {int}, description of {string} and a buffer of {int}")
+    public void stockLevelIsGreaterThanBuffer(int stockLevel, String description, int buffer) {
 
         notification = mock(Notification.class);
-        Warehouse warehouse = productID -> new Product(stockLevel);
+        Warehouse warehouse = productID -> new Product(stockLevel, description);
         Buffer bufferCalculator = product -> buffer;
 
         salesEventHandler = new SalesEventHandler(notification, warehouse, bufferCalculator);
@@ -29,7 +29,7 @@ public class CheckProductNeedsReorderingSteps {
 
     @Then("A {string} is sent to the store manager to order more product")
     public void aNotificationIsSentToTheStoreManagerToOrderMoreProduct(String message) {
-        verify(notification).send(any());
+        verify(notification).send(message);
     }
 
     @When("The {int} is purchased in a {int} that keeps the stock level above the buffer")

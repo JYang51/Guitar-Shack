@@ -16,7 +16,7 @@ public class SalesEventHandler {
         Product product = warehouse.fetchProduct(productID);
         int buffer = bufferCalculator.calculate(product);
         if (!alreadyOnOrder(product, buffer) && needsReordering(quantity, product, buffer)){
-            notification.send("Hello");
+            notification.send("Please order more of product " + productID + ": '" + product.getDescription() + "'");
         }
     }
 
