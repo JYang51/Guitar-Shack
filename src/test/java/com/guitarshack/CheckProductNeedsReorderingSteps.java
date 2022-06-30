@@ -15,7 +15,7 @@ public class CheckProductNeedsReorderingSteps {
     public void stockLevelIsGreaterThanBuffer(int stockLevel, String description, int buffer) {
 
         notification = mock(Notification.class);
-        Warehouse warehouse = productID -> new Product(stockLevel, description, 7);
+        Warehouse warehouse = productID -> new Product(stockLevel, description, 7, 811);
         Buffer bufferCalculator = product -> buffer;
 
         salesEventHandler = new SalesEventHandler(notification, warehouse, bufferCalculator);

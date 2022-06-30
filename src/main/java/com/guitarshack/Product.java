@@ -4,11 +4,13 @@ public class Product {
     private final int stockLevel;
     private String description;
     private final int leadTime;
+    private int id;
 
-    public Product(int stockLevel, String description, int leadTime) {
+    public Product(int stockLevel, String description, int leadTime, int id) {
         this.stockLevel = stockLevel;
         this.description = description;
         this.leadTime = leadTime;
+        this.id = id;
     }
 
     public int getStockLevel() {
@@ -21,5 +23,9 @@ public class Product {
 
     public int getLeadTime() {
         return leadTime;
+    }
+
+    public int getID() {
+        return id;
     }
 }
