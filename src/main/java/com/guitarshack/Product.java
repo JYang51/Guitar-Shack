@@ -1,7 +1,13 @@
 package com.guitarshack;
 
 public class Product {
-    public Product(int stockLevel) {
+    private final int stockLevel;
 
+    public Product(int stockLevel) {
+        this.stockLevel = stockLevel;
+    }
+
+    public int getStockLevel() {
+        return stockLevel;
     }
 }

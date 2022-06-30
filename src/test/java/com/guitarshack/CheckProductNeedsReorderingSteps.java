@@ -5,14 +5,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 public class CheckProductNeedsReorderingSteps {
     private Notification notification;
     private SalesEventHandler salesEventHandler;
 
-    @Given("{int} is greater than {int}")
+    @Given("A product with stock level of {int} and a buffer of {int}")
     public void stockLevelIsGreaterThanBuffer(int stockLevel, int buffer) {
 
         notification = mock(Notification.class);
@@ -31,5 +30,20 @@ public class CheckProductNeedsReorderingSteps {
     @Then("A {string} is sent to the store manager to order more product")
     public void aNotificationIsSentToTheStoreManagerToOrderMoreProduct(String message) {
         verify(notification).send(any());
+    }
+
+    @When("The {int} is purchased in a {int} that keeps the stock level above the buffer")
+    public void theProductIsPurchasedInAQuantityThatKeepsTheStockLevelAboveTheBuffer(int productID, int quantity) {
+        salesEventHandler.onPurchase(productID, quantity);
+    }
+
+    @Then("No notification sent to the store manager")
+    public void noNotificationSentToTheStoreManager() {
+        verify(notification, never()).send(any());
+    }
+
+    @When("a {int} of the {int} is purchased")
+    public void aQuantityOfTheProductIsPurchased(int quantity, int productID) {
+        salesEventHandler.onPurchase(productID, quantity);
     }
 }
