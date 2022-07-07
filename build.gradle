@@ -19,6 +19,8 @@ dependencies {
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
     testImplementation 'io.cucumber:cucumber-java:7.3.3'
     testImplementation 'io.cucumber:cucumber-junit:7.3.3'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.7'
+
 }
 
 task cucumber(type: Test, group: 'verification') {}
