@@ -11,6 +11,6 @@ public class SalesHistoryTest {
     @Test
     void returnsCorrectTotalForSpecificDates() {
         SalesHistory salesHistory = new ProductSalesHistory();
-        assertEquals(22, salesHistory.totalSales(811, LocalDate.of(2021, Month.JULY, 17), LocalDate.of(2021, Month.JULY, 27)));
+        assertEquals(11, salesHistory.totalSales(757, LocalDate.of(2021, Month.JULY, 17), LocalDate.of(2021, Month.JULY, 27)));
     }
 }

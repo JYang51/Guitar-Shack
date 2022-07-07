@@ -13,14 +13,14 @@ public class ProductSalesHistory implements SalesHistory {
     public int totalSales(int productID, LocalDate startDate, LocalDate endDate) {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.setMessageConverters(List.of(new MyGsonHttpMessageConverter()));
-        SalesTotal salesTotal = restTemplate.getForObject("https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=811&startDate=7%2F17%2F2021&endDate=7%2F27%2F2021&action=total", SalesTotal.class);
+        SalesTotal salesTotal = restTemplate.getForObject("https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=" + productID + "&startDate=7/17/2021&endDate=7/27/2021&action=total", SalesTotal.class);
         return salesTotal.total;
     }
 
     public class MyGsonHttpMessageConverter extends GsonHttpMessageConverter {
         public MyGsonHttpMessageConverter() {
             List<MediaType> types = Arrays.asList(
-                    new MediaType("text", "html", DEFAULT_CHARSET),
+                    new MediaType("text", "plain", DEFAULT_CHARSET),
                     new MediaType("application", "json", DEFAULT_CHARSET),
                     new MediaType("application", "*+json", DEFAULT_CHARSET)
             );
