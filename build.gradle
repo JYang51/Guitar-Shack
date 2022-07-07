@@ -21,8 +21,9 @@ dependencies {
     testImplementation 'io.cucumber:cucumber-junit:7.3.3'
 }
 
+task cucumber(type: Test, group: 'verification') {}
+
 test {
     useJUnitPlatform()
 }
 
-task cucumber(type: Test, group: 'verification') {}
