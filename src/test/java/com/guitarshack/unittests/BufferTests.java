@@ -1,5 +1,9 @@
-package com.guitarshack;
+package com.guitarshack.unittests;
 
+import com.guitarshack.AverageDailySales;
+import com.guitarshack.Buffer;
+import com.guitarshack.Product;
+import com.guitarshack.StockBuffer;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;

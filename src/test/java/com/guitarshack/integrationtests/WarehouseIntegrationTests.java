@@ -1,5 +1,7 @@
-package com.guitarshack;
+package com.guitarshack.integrationtests;
 
+import com.guitarshack.ProductWarehouse;
+import com.guitarshack.WarehouseTests;
 import org.springframework.web.client.RestTemplate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

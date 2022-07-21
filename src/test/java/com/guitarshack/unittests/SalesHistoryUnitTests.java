@@ -1,11 +1,14 @@
-package com.guitarshack;
+package com.guitarshack.unittests;
 
+import com.guitarshack.ProductSalesHistory;
+import com.guitarshack.SalesHistoryTest;
+import com.guitarshack.SalesTotal;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
 
-public class SalesHistoryUnitTests extends SalesHistoryTest{
+public class SalesHistoryUnitTests extends SalesHistoryTest {
 
     @Override
     protected ProductSalesHistory createSalesHistory() {

@@ -1,11 +1,14 @@
-package com.guitarshack;
+package com.guitarshack.unittests;
 
+import com.guitarshack.ProductData;
+import com.guitarshack.ProductWarehouse;
+import com.guitarshack.WarehouseTests;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
 
-public class WarehouseUnitTests extends WarehouseTests{
+public class WarehouseUnitTests extends WarehouseTests {
     @Override
     protected ProductWarehouse createWarehouse() {
         return new ProductWarehouse(new StubRestTemplate());

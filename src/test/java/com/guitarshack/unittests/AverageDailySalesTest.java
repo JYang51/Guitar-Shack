@@ -1,6 +1,10 @@
-package com.guitarshack;
+package com.guitarshack.unittests;
 
 
+import com.guitarshack.AverageDailySales;
+import com.guitarshack.AverageDailySalesCalculator;
+import com.guitarshack.Product;
+import com.guitarshack.SalesHistory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

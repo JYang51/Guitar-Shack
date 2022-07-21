@@ -1,5 +1,5 @@
 package com.guitarshack;
 
 public class SalesTotal {
-    int total;
+    public int total;
 }
