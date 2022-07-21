@@ -1,11 +1,8 @@
 package com.guitarshack;
 
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.List;
 
 public class ProductSalesHistory implements SalesHistory {
@@ -24,14 +21,4 @@ public class ProductSalesHistory implements SalesHistory {
         return salesTotal.total;
     }
 
-    public class MyGsonHttpMessageConverter extends GsonHttpMessageConverter {
-        public MyGsonHttpMessageConverter() {
-            List<MediaType> types = Arrays.asList(
-                    new MediaType("text", "plain", DEFAULT_CHARSET),
-                    new MediaType("application", "json", DEFAULT_CHARSET),
-                    new MediaType("application", "*+json", DEFAULT_CHARSET)
-            );
-            super.setSupportedMediaTypes(types);
-        }
-    }
 }
