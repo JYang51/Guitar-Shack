@@ -1,0 +1,8 @@
+é13:36:11.840 [Test worker] DEBUG com.guitarshack.SalesHistoryUnitTests$StubRestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
+”13:36:11.845 [Test worker] DEBUG com.guitarshack.SalesHistoryUnitTests$StubRestTemplate - Accept=[text/plain, application/json, application/*+json]
+j13:36:12.816 [Test worker] DEBUG com.guitarshack.SalesHistoryUnitTests$StubRestTemplate - Response 200 OK
+‚13:36:12.820 [Test worker] DEBUG com.guitarshack.SalesHistoryUnitTests$StubRestTemplate - Reading to [com.guitarshack.SalesTotal]
+Þ13:36:12.832 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
+‰13:36:12.833 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
+_13:36:12.972 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+w13:36:12.973 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.SalesTotal]
