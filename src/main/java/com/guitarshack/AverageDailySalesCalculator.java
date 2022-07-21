@@ -15,6 +15,6 @@ public class AverageDailySalesCalculator implements AverageDailySales {
 
     @Override
     public double ofProduct(Product product) {
-        return salesHistory.totalSales(product.getID(), now.minusDays(10), now)/10.0;
+        return salesHistory.totalSales(product.getID(), now.minusDays(30), now)/30.0;
     }
 }

@@ -1,20 +1,28 @@
-ó14:41:31.901 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
-ž14:41:31.905 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Accept=[text/plain, application/json, application/*+json]
-t14:41:32.558 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Response 200 OK
-Œ14:41:32.562 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Reading to [com.guitarshack.SalesTotal]
+ó15:54:30.921 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
+ž15:54:30.928 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Accept=[text/plain, application/json, application/*+json]
+t15:54:31.613 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Response 200 OK
+Œ15:54:31.616 [Test worker] DEBUG com.guitarshack.unittests.SalesHistoryUnitTests$StubRestTemplate - Reading to [com.guitarshack.SalesTotal]
 
-	¸14:41:32.579 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - HTTP GET https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=811
+	¸15:54:31.634 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - HTTP GET https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=811
 
-	›14:41:32.579 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Accept=[text/plain, application/json, application/*+json]
+	›15:54:31.634 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Accept=[text/plain, application/json, application/*+json]
 
-	q14:41:33.091 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Response 200 OK
+	q15:54:32.216 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Response 200 OK
 
-	Š14:41:33.091 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Reading to [com.guitarshack.ProductData]
-Þ14:41:33.095 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
-‰14:41:33.096 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
-_14:41:33.228 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
-w14:41:33.228 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.SalesTotal]
-¦14:41:33.233 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=811
-‰14:41:33.233 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
-_14:41:33.371 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
-x14:41:33.371 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.ProductData]
+	Š15:54:32.216 [Test worker] DEBUG com.guitarshack.unittests.WarehouseUnitTests$StubRestTemplate - Reading to [com.guitarshack.ProductData]
+Þ15:54:32.221 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=757&startDate=7/17/2021&endDate=7/27/2021&action=total
+‰15:54:32.221 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
+_15:54:32.362 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+w15:54:32.362 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.SalesTotal]
+¦15:54:32.381 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=811
+‰15:54:32.381 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
+_15:54:32.522 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+x15:54:32.522 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.ProductData]
+Þ15:54:32.523 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales?productId=811&startDate=7/17/2021&endDate=7/27/2021&action=total
+‰15:54:32.524 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
+_15:54:32.690 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+w15:54:32.690 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.SalesTotal]
+¦15:54:32.700 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product?id=811
+‰15:54:32.700 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json]
+_15:54:32.837 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
+x15:54:32.837 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [com.guitarshack.ProductData]

@@ -29,14 +29,14 @@ public class AverageDailySalesTest {
         AverageDailySales averageDailySales = new AverageDailySalesCalculator(salesHistory, now);
         Product product = new Product(5, "agarg", 6, 4);
         double averageSales = averageDailySales.ofProduct(product);
-        assertEquals(1.2, averageSales, 0);
+        assertEquals(0.4, averageSales, 0);
     }
 
     @Test
-    void startDateUsedIs10DaysAgo() {
+    void startDateUsedIs30DaysAgo() {
         AverageDailySales averageDailySales = new AverageDailySalesCalculator(salesHistory, now);
         averageDailySales.ofProduct(new Product(4, "", 4, 4));
-        verify(salesHistory).totalSales(eq(4), eq(LocalDate.of(2022, Month.JUNE, 27)), any());
+        verify(salesHistory).totalSales(eq(4), eq(LocalDate.of(2022, Month.JUNE, 7)), any());
     }
 
     @Test
